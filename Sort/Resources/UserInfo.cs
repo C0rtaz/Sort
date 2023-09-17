@@ -9,6 +9,7 @@ namespace Sort.Resources
     internal static class UserInfo
     {
         public static string arrLength;
+        public static int[] arr = new int[int.Parse(arrLength)];
 
     }
 }
