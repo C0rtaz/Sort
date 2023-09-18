@@ -5,14 +5,16 @@ namespace Sort;
 
 public partial class InputNumbers : ContentPage
 {
-	public InputNumbers()
+
+    public InputNumbers()
 	{
 		InitializeComponent();
         VerticalStackLayout stack = this.FindByName<VerticalStackLayout>("stackLayout");
 		InitInputPage initInputPage = new InitInputPage(stack);
     }
 
-    async static public void NextPage() {
+    async  public void NextPage()
+    {
         SortAnimation sortAnimation = new SortAnimation();
         await Navigation.PushAsync(sortAnimation);
     }

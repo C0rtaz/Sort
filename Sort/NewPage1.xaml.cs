@@ -4,8 +4,8 @@ namespace Sort;
 
 public partial class NewPage1 : ContentPage
 {
-    
-    
+    public static InputNumbers newPage = new InputNumbers();
+
     public NewPage1()
 	{
         InitializeComponent();
@@ -21,7 +21,7 @@ public partial class NewPage1 : ContentPage
          numberEntry.Completed += async (sender, args) =>
         {
             UserInfo.arrLength = numberEntry.Text;
-            InputNumbers newPage = new InputNumbers();
+            
             await Navigation.PushAsync(newPage);
         };
     }

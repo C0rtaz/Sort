@@ -72,7 +72,7 @@ namespace Sort.Resources
 
             buttonNext.Clicked +=  (sender, args) =>
             {
-                InputNumbers.NextPage();
+                NewPage1.newPage.NextPage();
             };
         }
         private void createLabel(string text) {
